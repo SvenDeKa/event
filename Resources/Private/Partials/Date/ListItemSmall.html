@@ -1,0 +1,21 @@
+
+<div class='list-item'>
+	<b>
+		<f:format.date format="d.m.Y">{date.datetimestart}</f:format.date>
+		<f:if condition="{date.daylong}">
+			<f:then>
+				<small>ganztägig</small>
+			</f:then>
+			<f:else>
+				- <f:format.date format="d.m.Y">{date.datetimestart}</f:format.date>
+			</f:else>
+		</f:if>
+	</b>
+	<p>
+	{date.location.name}
+	<f:debug title="date.hosts">{date.hosts}</f:debug>
+	<f:for each="{date.hosts}" as="host">
+			<f:debug title="host">{host}</f:debug>
+			<br>{host.host.title} {host.host.name}</p>
+	</f:for>
+</div>

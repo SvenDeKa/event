@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-11T13:49:22Z" product-name="z3_event">
+		<header/>
+		<body>
+
+			
+			<trans-unit id="tx_extbase_type.description">
+				<source>TYP</source>
+			</trans-unit>
+			
+			<trans-unit id="first_name.description">
+				<source>Vorame</source>
+			</trans-unit>
+			<trans-unit id="middle_name.description">
+				<source>2. Vorname</source>
+			</trans-unit>
+			<trans-unit id="last_name.description">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="name.description">
+				<source>Name</source>
+			</trans-unit>
+			
+			<trans-unit id="salutation.description">
+				<source>Anrede</source>
+			</trans-unit>
+			<trans-unit id="title.description">
+				<source>Titel</source>
+			</trans-unit>
+			
+			<trans-unit id="address.description">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="zip.description">
+				<source>Postleitzahl</source>
+			</trans-unit>
+			<trans-unit id="city.description">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="country.description">
+				<source>land</source>
+			</trans-unit>
+			
+			<trans-unit id="email.description">
+				<source>E-Mail-Adresse</source>
+			</trans-unit>
+			<trans-unit id="telephone.description">
+				<source>Telefonnummer</source>
+			</trans-unit>
+			<trans-unit id="fax.description">
+				<source>Faxnummer</source>
+			</trans-unit>
+			
+			<trans-unit id="company.description">
+				<source>Firma</source>
+			</trans-unit>
+			<trans-unit id="www.description">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="images.description">
+				<source>Bild(-er)</source>
+			</trans-unit>
+			
+			
+			<trans-unit id="dates.description">
+				<source>Teilnahme an Terminen</source>
+			</trans-unit>
+			
+			<trans-unit id="fe_user.description">
+				<source>Entspricht Website-Nutzer</source>
+			</trans-unit>
+			<trans-unit id="fe_owner.description">
+				<source>Angelegt durch Nutzer</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

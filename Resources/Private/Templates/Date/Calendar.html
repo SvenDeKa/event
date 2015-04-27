@@ -1,0 +1,69 @@
+<f:layout name="Default" />
+
+Show a calendarview of dates
+
+<f:section name="main">
+	
+	<f:flashMessages />
+	
+	<f:if condition="{settings.switchViews.showSwitchToCal}">
+		<f:then>
+			<f:link.action controller="Date" action="list" class="switch-view list">
+				Listenansicht
+			</f:link.action>
+		</f:then>
+	</f:if>
+	
+	<f:render section="{mode}" />
+	
+</f:section>
+
+<f:section name="month">
+	<p>MONTH-VIEW</p>
+	<table cellspacing="0" class="calendar">
+		
+		<!-- Days of the Week -->
+		<thead>
+			<f:render partial="Calendar/HeaderYearNav" arguments="{calendar:calendar,settings:settings}" />
+			<f:render partial="Calendar/HeaderMonthNav" arguments="{calendar:calendar,settings:settings}" />
+			<f:render partial="Calendar/HeaderWeekdays" arguments="{calendar:calendar,settings:settings}" />
+		</thead>
+		
+		<!-- Weeks of the Month -->
+		<tbody>
+			<f:for each="{calendar.month}" as="week">
+				<tr>
+					<f:for each="{week}" as="day">
+						<f:render partial="Calendar/Day" arguments="{day:day,settings:settings}" />
+					</f:for>
+				</tr>
+			</f:for>
+		</tbody>
+		
+	</table>
+</f:section>
+
+<f:section name="week">
+	<p>WEEK-VIEW</p>
+	<table cellspacing="0" class="calendar">
+		
+		<!-- Days of the Week -->
+		<thead>
+			<f:render partial="Calendar/HeaderYearNav" arguments="{calendar:calendar,settings:settings}" />
+			<f:render partial="Calendar/HeaderMonthNav" arguments="{calendar:calendar,settings:settings}" />
+			<f:render partial="Calendar/HeaderWeekdays" arguments="{calendar:calendar,settings:settings}" />
+		</thead>
+		
+		<!-- Weeks of the Month -->
+		<tbody>
+			<f:for each="{calendar.month}" as="week">
+				<tr>
+					<f:for each="{week}" as="day">
+						<f:render partial="Calendar/Day" arguments="{day:day,settings:settings}" />
+					</f:for>
+				</tr>
+			</f:for>
+		</tbody>
+		
+	</table>
+</f:section>

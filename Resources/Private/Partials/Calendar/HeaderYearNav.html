@@ -1,0 +1,24 @@
+
+<tr>
+	<td colspan="2" class="previousMonth">
+		<f:if condition="{calendar.navigation.previousYear}">
+			<f:link.action action="calendar" controller="Date" arguments="{
+				year:'{f:format.date(date:\'{calendar.navigation.previousYear}\',format:\'Y\')}',
+			month:'{f:format.date(date:\'{calendar.navigation.previousYear}\',format:\'m\')}'
+				}">
+				{f:format.date(date:'{calendar.navigation.previousYear}',format:'Y')}
+			</f:link.action>
+		</f:if>
+	</td>
+	<td colspan="3" class="currentMonth">
+		{f:format.date(date:'{calendar.navigation.shownYear.datetime}',format:'Y')}
+	</td>
+	<td colspan="2" class="nextMonth">
+		<f:link.action action="calendar" controller="Date" arguments="{
+			year:'{f:format.date(date:\'{calendar.navigation.nextYear}\',format:\'Y\')}',
+			month:'{f:format.date(date:\'{calendar.navigation.nextYear}\',format:\'m\')}'
+			}">
+			{f:format.date(date:'{calendar.navigation.nextYear}',format:'Y')}
+		</f:link.action>
+	</td>
+</tr>

@@ -1,0 +1,100 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+	<f:render partial="Date/Filter" arguments="{_all}" />
+	<f:flashMessages />
+	
+	<f:if condition="{settings.switchViews.showSwitchToCal}">
+		<f:then>
+			<f:link.action controller="Date" action="calendar" class="switch-view calender">
+				Kalenderansicht
+			</f:link.action>
+		</f:then>
+	</f:if>
+	
+	<div class='switch-view'>
+		<f:link.page pageUid="" arguments="{mode:'list'}">Listenansicht</f:link.action>
+		<f:link.page pageUid="" arguments="{mode:'tiles'}">Kachelansicht</f:link.action>
+	</div>
+	<f:comment>
+	<f:render section="{mode}" />
+	</f:comment>
+</f:section>
+
+
+
+
+<f:section name="list">
+	<p>LIST-VIEW</p>
+	<div class="list">
+		<f:for each="{dates}" as="date">
+			<div class="list-item">
+				<h2>
+					<f:link.action pageUid="{settings.dateShow.pid}" action="show" arguments="{date : date}">
+						{date.event.name}
+					</f:link.action>
+				</h2>
+				<div class="date-time">
+					<f:format.date format="d.m.Y">{date.datetimeStart}</f:format.date>
+					<span class="small"><f:format.date format="H:i">{date.datetimeStart}</f:format.date></span>
+				</div>
+				<div class="city-type">
+					{date.location.city}
+				</div>
+				<div class="hosts">
+
+					<f:for each="{date.hosts}" as="host" iteration="i">
+						{f:if(condition:'{i.index}>0',then:'<br>')}{host.name}
+					</f:for>
+				</div>
+				<div class="hint default"></div>
+				<f:link.action pageUid="{settings.dateShow.pid}" action="show" arguments="{date : date}">details</f:link.action>
+			</div>
+		</f:for>
+		
+	</div>
+	
+</f:section>
+
+
+<f:section name="tiles">
+	<p>TILES-VIEW</p>
+	<div class="tiles">
+		<f:for each="{dates}" as="date">
+			<div class="list-item">
+				<h2>
+					<f:link.action pageUid="{settings.dateShow.pid}" action="show" arguments="{date : date}">
+						{date.event.name}
+					</f:link.action>
+				</h2>
+				<div class="date-time">
+					<f:format.date format="d.m.Y">{date.datetimeStart}</f:format.date>
+					<span class="small"><f:format.date format="H:i">{date.datetimeStart}</f:format.date></span>
+				</div>
+				<div class="city-type">
+					{date.location.city}
+				</div>
+				<div class="hosts">
+
+					<f:for each="{date.hosts}" as="host" iteration="i">
+						{f:if(condition:'{i.index}>0',then:'<br>')}{host.name}
+					</f:for>
+				</div>
+				<div class="hint default"></div>
+				<f:link.action pageUid="{settings.dateShow.pid}" action="show" arguments="{date : date}">details</f:link.action>
+			</div>
+		</f:for>
+		
+	</div>
+</f:section>

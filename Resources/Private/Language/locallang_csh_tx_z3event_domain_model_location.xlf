@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-11T18:32:52Z" product-name="z3_event">
+		<header/>
+		<body>
+
+			<trans-unit id="name.description">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="address.description">
+				<source>Anschrift</source>
+			</trans-unit>
+			<trans-unit id="postal_code.description">
+				<source>PLZ</source>
+			</trans-unit>
+			<trans-unit id="city.description">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="lat.description">
+				<source>Breitengrad</source>
+			</trans-unit>
+			<trans-unit id="lng.description">
+				<source>Längengrad</source>
+			</trans-unit>
+			<trans-unit id="www.description">
+				<source>Link zum Veranstaltungsort</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>Email des Veranstaltungsorts</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>Beschreibung</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

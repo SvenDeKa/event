@@ -1,0 +1,92 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Select function</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Referenten Liste</numIndex>
+										<numIndex index="1">Host->list;Host->show</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Referenten Detail</numIndex>
+										<numIndex index="1">Host->show</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+					
+					<settings.hosts.viewMode>
+						<TCEforms>
+							<label>Art der Ansicht</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Liste</numIndex>
+										<numIndex index="1">list</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Coverflow</numIndex>
+										<numIndex index="1">coverflow</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.hosts.viewMode>
+					
+					<settings.hosts.pidShow>
+						<TCEforms>
+							<label>Seite mit Detailansicht</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms> 
+					</settings.hosts.pidShow>
+					<settings.hosts.pidList>
+						<TCEforms>
+							<label>Seite mit Listenansicht</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms> 
+					</settings.hosts.pidList>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

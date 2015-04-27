@@ -1,0 +1,10 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+	<f:flashMessages />
+	<h1>Single View for Host</h1>
+
+	<f:render partial="Host/Properties" arguments="{host:host}" />
+	<f:link.action pageUid="{settings.hosts.pidList}" action="list">Back to list</f:link.action><br />
+
+</f:section>

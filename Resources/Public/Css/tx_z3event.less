@@ -1,0 +1,71 @@
+
+
+.tx-z3-event {
+	table.calendar {
+		width: 100%;
+
+		thead {
+			font-weight: bold;
+			text-align: center;
+			font-weight: bold;
+
+			tr.month td {
+				&.nextMonth {
+					text-align: right;
+				}
+				&.previousMonth {
+					text-align: left;
+				}
+			}
+
+			tr.weekdays td {
+				background-color: #eee;
+			}
+		}
+
+		tbody {
+
+			td {
+				border: 1px solid #eee;
+				height: 100px;
+				vertical-align: top;
+				width: 14.28%;
+			}
+			td.in-month.is-weekend{
+				background-color: #fbfbfb;
+				color: #999;
+			}
+			
+			td.off-month {
+				color: #eee;
+			}
+			td.off-month.is-weekend{
+				background-color: #fefefe;
+				color: #eee;
+			}
+			
+			td span.day {
+				display: block;
+				font-size: 24px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				width: 30px;
+			}
+			
+			td ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			td.is-today{
+				background-color: #0088CC;
+				span.day,
+				a{
+					color: white;
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-11T18:32:51Z" product-name="z3_event">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_z3event_label.calendar.month.01.long">
+				<source>Januar</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.01.short">
+				<source>Jan</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.02.long">
+				<source>Februar</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.02.short">
+				<source>Feb</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.03.long">
+				<source>März</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.03.short">
+				<source>Mar</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.04.long">
+				<source>April</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.04.short">
+				<source>Apr</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.05.long">
+				<source>Mai</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.05.short">
+				<source>Mai</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.06.long">
+				<source>Juni</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.06.short">
+				<source>Jun</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.07.long">
+				<source>Juli</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.07.short">
+				<source>Jul</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.08.long">
+				<source>August</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.08.short">
+				<source>Aug</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.09.long">
+				<source>September</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.09.short">
+				<source>Sept</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.10.long">
+				<source>Oktober</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.10.short">
+				<source>Okt</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.11.long">
+				<source>November</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.11.short">
+				<source>Nov</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.12.long">
+				<source>Dezember</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.month.12.short">
+				<source>Dez</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_label.calendar.day.Mon.long">
+				<source>Montag</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Mon.short">
+				<source>Mo</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Tue.long">
+				<source>Dienstag</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Tue.short">
+				<source>Di</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Wed.long">
+				<source>Mittwoch</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Wed.short">
+				<source>Mi</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Thu.long">
+				<source>Donnerstag</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Thu.short">
+				<source>Do</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Fri.long">
+				<source>Freitag</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Fri.short">
+				<source>Fr</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Sat.long">
+				<source>Samstag</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Sat.short">
+				<source>Sa</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Sun.long">
+				<source>Sonntag</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_label.calendar.day.Sun.short">
+				<source>So</source>
+			</trans-unit>
+			
+			
+			<trans-unit id="tx_z3event_domain_model_event">
+				<source>Veranstaltung</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.name">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.subtitle">
+				<source>subtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.categories">
+				<source>Kategorien</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.tags">
+				<source>tags</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.dates">
+				<source>Termine</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.media">
+				<source>Dokumente</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_date">
+				<source>Termin</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.datetime_start">
+				<source>Anfang</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.datetime_end">
+				<source>Ende</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.daylong">
+				<source>ganztägig</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.exclude">
+				<source>exclude</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.event">
+				<source>Veranstaltung</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.location">
+				<source>Veranstaltungsort</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.hosts">
+				<source>Veranstalter/ Referent / Speaker</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.attendees">
+				<source>Teilnehmer</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.media">
+				<source>Dokumente</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_location">
+				<source>Veranstaltungsort</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.address">
+				<source>Anschrift</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.postal_code">
+				<source>PLZ</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.city">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.lat">
+				<source>Breitengrad</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.lng">
+				<source>Längengrad</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.www">
+				<source>Link zum Veranstaltungsort</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.email">
+				<source>Email des Veranstaltungsorts</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.description">
+				<source>Beschreibung</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_category">
+				<source>VeranstaltungsKategorie</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_category.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_category.parent">
+				<source>Übergeordnete Kategorie</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_category.children">
+				<source>SubKategorien</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_host">
+				<source>Veranstalter, Verantwortlicher, etc</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.dates">
+				<source>Termine</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.salutation">
+				<source>Anrede</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.title">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.city">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.www">
+				<source>Webseite</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.company">
+				<source>Firma</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.position">
+				<source>Position in Firma</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.fe_user">
+				<source>Nutzer (Frontendnutzer)</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_attendee">
+				<source>Teilnehmer</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.tx_extbase_type">
+				<source>TYP</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.salutation">
+				<source>Anrede</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.title">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.first_name">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.middle_name">
+				<source>2. Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.last_name">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.address">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.telephone">
+				<source>Telefon</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.zip">
+				<source>Postleitzahl</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.city">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.country">
+				<source>Land</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.www">
+				<source>Webseite</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.company">
+				<source>company</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.position">
+				<source>position</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.type">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.dates">
+				<source>Teilnahme an Terminen</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.fe_user">
+				<source>Nutzer (Frontendnutzer)</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.fe_owner">
+				<source>Besitzer (Frontendnutzer)</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_datehost">
+				<source>DateHost</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_datehost.status">
+				<source>zugesagt, frei, angefragt</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_datehost.date">
+				<source>Termin</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_datehost.host">
+				<source>Veranstalter, Speaker, o.ä</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_dateattendee">
+				<source>DateAttendee</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_dateattendee.status">
+				<source>zugesagt, frei, angefragt</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_dateattendee.date">
+				<source>Termin</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_dateattendee.attendee">
+				<source>Teilnehmer</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for backend of news</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="events_title">Events</label>
+			<label index="events_description">Stellt Veranstaltungen und Ihre Termine dar</label>
+			<label index="locations_title">Locations</label>
+			<label index="locations_description">Stellt Veranstaltungorte dar</label>
+			<label index="hosts_title">Referentes</label>
+			<label index="hosts_description">Stellt Referenten dar</label>
+		</languageKey>
+	</data>
+</T3locallang>

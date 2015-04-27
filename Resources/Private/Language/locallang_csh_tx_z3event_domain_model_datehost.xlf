@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-11T18:32:52Z" product-name="z3_event">
+		<header/>
+		<body>
+
+			<trans-unit id="status.description">
+				<source>zugesagt, frei, angefragt</source>
+			</trans-unit>
+			<trans-unit id="date.description">
+				<source>Termin</source>
+			</trans-unit>
+			<trans-unit id="host.description">
+				<source>Veranstalter, Speaker, o.ä</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

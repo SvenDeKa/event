@@ -1,0 +1,68 @@
+plugin.tx_z3event {
+
+	view {
+		templateRootPath = {$plugin.tx_z3event.view.templateRootPath}
+		partialRootPath = {$plugin.tx_z3event.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_z3event.view.layoutRootPath}
+	}
+
+	persistence {
+		storagePid = {$plugin.tx_z3event.persistence.storagePid}
+	}
+
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+
+	settings{
+		eventShow.pid = 36
+		eventList.pid = 2
+		dateList.pid = 
+		dateCalendar.pid = 2
+		dateShow.pid = 36
+		hostList.pid = 29
+		hostShow.pid = 29
+		# general
+		assets {
+			jQueryLib = {$plugin.tx_z3event.settings.assets.jQueryLib}
+			cssFile = {$plugin.tx_z3event.settings.assets.cssFile}
+			includeJsInFooter = {$plugin.tx_z3event.settings.assets.includeJsInFooter}
+			jsFile = {$plugin.tx_z3event.settings.assets.jsFile}
+		}
+		calendar {
+			showPastMonths = 0
+			showPastEvents = 1
+			dontLinkPastEvents = 1
+			showMonthJumpNav = 1
+			showYearNav = 1
+		}
+		# TS per plugin
+		attendees.salutation {
+			10.value = 
+			10.label = Anrede
+			20.value = Frau
+			20.label = Frau
+			30.value = Herr
+			30.label = Herr
+		}
+	}
+}
+
+ # Module configuration
+module.tx_z3event {
+	persistence {
+		storagePid = {$module.tx_z3event.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_z3event.view.templateRootPath}
+		partialRootPath = {$module.tx_z3event.view.partialRootPath}
+		layoutRootPath = {$module.tx_z3event.view.layoutRootPath}
+	}
+}
+
+
+
+
+
+#     mod.web_list.hideTables = tx_z3event_domain_model_datehost,tx_z3event_domain_model_dateattendee

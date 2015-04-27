@@ -1,0 +1,12 @@
+<f:if condition="{settings.calendar.showMonthJumpNav}>0">
+	<form method="get" id="monthJumpNav">
+		<input type="hidden" name="tx_z3event_events[year]" value="{f:format.date(date:'{calendar.navigation.shownYear.dateTime}',format:'Y')}" />
+		<select name="tx_z3event_events[month]" >
+			<f:for each="{calendar.navigation.shownYear.months}" as="month">
+				<option value="{f:format.date(date:'{month.dateTime}',format:'m')}" {f:if(condition:'{month.isShownMonth}',then:'selected="selected"')}>
+					<f:translate key="tx_z3event_label.calendar.month.{f:format.date(date:'{month.dateTime}',format:'m')}.long" />
+				</option>
+			</f:for>
+		</select>
+	</form>
+</f:if>

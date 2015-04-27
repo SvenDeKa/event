@@ -1,0 +1,28 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+	<h1>Listing for Event</h1>
+
+	<f:flashMessages />
+	
+	<f:for each="{events}" as="event">
+		<div class="row list-item">
+			<h2><f:link.action pageUid="{settings.eventShow.pid}" action="show" arguments="{event : event}"> {event.name}</f:link.action></h2>
+			<p>
+				<f:format.crop maxCharacters="140" append="..." respectWordBoundaries="1" respectHtml="1"> {event.description}</f:format.crop>
+			</p>
+		</div>
+	</f:for>
+
+</f:section>

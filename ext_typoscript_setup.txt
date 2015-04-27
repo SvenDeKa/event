@@ -1,0 +1,44 @@
+config.tx_extbase{
+    persistence{
+        classes{
+			
+            Tx_Extbase_Domain_Model_FrontendUser {
+                mapping {
+                    tableName = fe_users
+#					subclasses {
+#						Tx_Z3Event_Host = TYPO3\Z3Event\Domain\Model\Host
+#						Tx_Z3Event_Attendee = TYPO3\Z3Event\Domain\Model\Attendee
+#					}
+          		}
+            }
+
+            TYPO3\Z3Event\Domain\Model\Attendee {
+                subclasses {
+					0 = TYPO3\Z3Event\Domain\Model\AttendeeStandAlone
+					1 = TYPO3\Z3Event\Domain\Model\AttendeeFeUser
+				}
+            }
+			TYPO3\Z3Event\Domain\Model\AttendeeFeUser{
+                mapping {
+					tableName = tx_z3event_domain_model_attendee
+					recordType = 1
+                }
+            }
+			TYPO3\Z3Event\Domain\Model\AttendeeStandAlone{
+                mapping {
+					tableName = tx_z3event_domain_model_attendee
+					recordType = 0
+                }
+            }
+
+    	}
+    }
+}
+TCAdefaults.tx_z3event_domain_model_date {
+	status = 1
+}
+
+
+
+
+

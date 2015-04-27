@@ -1,0 +1,49 @@
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+		
+	<f:flashMessages />
+		
+	<div class="row">
+		
+		<article class="span8">
+			
+			<header>
+				<h1>{date.event.name}</h1>
+				<div class="info-block small">
+					am <f:format.date format='d.m.Y H:i'>{date.datetimestart}</f:format.date>
+					bis <f:format.date format='d.m.Y H:i'>{date.datetimeend}</f:format.date>
+				</div>
+			</header>
+
+			<f:format.html parseFuncTSPath="lib.parseFunc_RTE">{date.event.description}</f:format.html>
+
+		</article>
+		
+		<aside class="span4">
+			<h2>alle Termine der Veranstaltung</h2>
+			<f:for each="{date.event.dates}" as="edate">
+				<f:render partial="Date/ListItemSmall" arguments="{date:edate}" />
+			</f:for>
+			<h2>Downloads</h2>
+			<f:for each="{event.media}" as="emedium">
+				<f:render partial="Medium/ListItemSmall" arguments="{medium:emedium}" />
+			</f:for>
+		</aside>
+	</div>
+	
+	
+	<f:link.action action="list">Back to list</f:link.action><br />
+	
+</f:section>

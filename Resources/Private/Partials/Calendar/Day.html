@@ -1,0 +1,39 @@
+
+
+<f:if condition="{day.isShownMonth}">
+	
+	<f:then>
+		<td class="day in-month{f:if(condition:'{day.isWeekend}',then:' is-weekend')}{f:if(condition:'{day.isToday}',then:' is-today')}{f:if(condition:'{day.isPast}',then:' is-past')}{f:if(condition:'{day.isFuture}',then:' is-future')}">
+			<span class="day"><f:format.date format="d">{day.datetime}</f:format.date></span>
+			<f:if condition="{day.dates}">
+				<ul>
+					<f:if condition="{day.dontLinkDates}==1">
+						<f:then>
+							<f:for each="{day.dates}" as="date">
+								<li>
+									<f:format.date format="H:i">{date.datetimestart}</f:format.date>: {date.event.name}
+								</li>
+							</f:for>
+						</f:then>
+						<f:else>
+							<f:for each="{day.dates}" as="date">
+								<li>
+									<f:link.action pageUid="{settings.dateShow.pid}" action="show" controller="Date" arguments="{date:date}">
+										<f:format.date format="H:i">{date.datetimestart}</f:format.date>: {date.event.name}
+									</f:link.action>
+								</li>
+							</f:for>
+						</f:else>
+					</f:if>
+				</ul>
+			</f:if>
+		</td>
+	</f:then>
+	
+	<f:else>
+		<td class="day off-month{f:if(condition:'{day.isPrevMonth}',then:' prev-month')}{f:if(condition:'{day.isNextMonth}',then:' next-month')}{f:if(condition:'{day.isWeekend}',then:' is-weekend')}{f:if(condition:'{day.isToday}',then:' is-today')}">
+			<span class="day"><f:format.date format="d">{day.datetime}</f:format.date></span>
+		</td>
+	</f:else>
+	
+</f:if>

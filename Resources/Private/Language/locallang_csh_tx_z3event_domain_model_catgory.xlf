@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-11T15:30:12Z" product-name="z3_event">
+		<header/>
+		<body>
+
+			<trans-unit id="name.description">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="parent.description">
+				<source>Übergeordnete Kategorie</source>
+			</trans-unit>
+			<trans-unit id="children.description">
+				<source>SubKategorien</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

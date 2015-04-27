@@ -1,0 +1,52 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1>Listing for Location</h1>
+
+<f:flashMessages />
+
+<table  class="tx_z3event" >
+	<tr>
+		<th><f:translate key="tx_z3event_domain_model_location.name" /></th>
+		<th><f:translate key="tx_z3event_domain_model_location.address" /></th>
+		<th><f:translate key="tx_z3event_domain_model_location.postal_code" /></th>
+		<th><f:translate key="tx_z3event_domain_model_location.city" /></th>
+		<th><f:translate key="tx_z3event_domain_model_location.lat" /></th>
+		<th><f:translate key="tx_z3event_domain_model_location.lng" /></th>
+		<th><f:translate key="tx_z3event_domain_model_location.www" /></th>
+		<th><f:translate key="tx_z3event_domain_model_location.email" /></th>
+		<th><f:translate key="tx_z3event_domain_model_location.description" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{locations}" as="location">
+		<tr>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.name}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.address}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.postalCode}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.city}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.lat}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.lng}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.www}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.email}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{location : location}"> {location.description}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{location : location}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{location : location}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Location</f:link.action>
+</f:section>

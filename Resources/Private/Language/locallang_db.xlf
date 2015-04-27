@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-11T18:32:52Z" product-name="z3_event">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_z3event_domain_model_event">
+				<source>Event</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.tags">
+				<source>Tags</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.dates">
+				<source>Dates</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_event.media">
+				<source>Media</source>
+			</trans-unit>
+
+			<trans-unit id="tx_z3event_domain_model_date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.datetime_start">
+				<source>Datetime Start</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.datetime_end">
+				<source>Datetime End</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.daylong">
+				<source>Daylong</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.status.open">
+				<source>open</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.status.closed">
+				<source>closed</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.status.new">
+				<source>new</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.status.shortSupply">
+				<source>short supply (rare)</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.statustext">
+				<source>Statustext</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.exclude">
+				<source>Exclude</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.event">
+				<source>Event</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.hosts">
+				<source>Hosts</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.attendees">
+				<source>Attendees</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_date.media">
+				<source>Media</source>
+			</trans-unit>
+
+			<trans-unit id="tx_z3event_domain_model_location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.postal_code">
+				<source>Postal Code</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.lat">
+				<source>Lat</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.lng">
+				<source>Lng</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.www">
+				<source>Www</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_location.description">
+				<source>Description</source>
+			</trans-unit>
+
+			<trans-unit id="tx_z3event_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_category.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_category.parent">
+				<source>Parent</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_category.children">
+				<source>Children</source>
+			</trans-unit>
+
+			<trans-unit id="tx_z3event_domain_model_host">
+				<source>Host</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.dates">
+				<source>referiert Events</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.tx_extbase_type">
+				<source>TYP</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.salutation">
+				<source>Anrede</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.title">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.city">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.www">
+				<source>www</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.company">
+				<source>Firma</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.position">
+				<source>position in Firma</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.fe_user">
+				<source>Nutzer (Frontendnutzer)</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_host.images">
+				<source>Bild</source>
+			</trans-unit>
+			
+			<trans-unit id="fe_users.tx_extbase_type.Tx_Z3Event_Host">
+				<source>z3_event Host</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_attendee">
+				<source>Teilnehmer</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.tx_extbase_type">
+				<source>TYP</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.salutation">
+				<source>Anrede</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.title">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.first_name">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.middle_name">
+				<source>2. Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.last_name">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.address">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.telephone">
+				<source>Telefon</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.zip">
+				<source>Postleitzahl</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.city">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.country">
+				<source>Land</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.www">
+				<source>www</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.company">
+				<source>company</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.position">
+				<source>position</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.type">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.dates">
+				<source>Teilnahme an Terminen</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.fe_user">
+				<source>Nutzer (Frontendnutzer)</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.fe_owner">
+				<source>Besitzer (Frontendnutzer)</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_attendee.images">
+				<source>Bild</source>
+			</trans-unit>
+			
+			<trans-unit id="fe_users.tx_extbase_type.Tx_Z3Event_Attendee">
+				<source>z3_event Attendee</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3event_domain_model_datehost">
+				<source>Date Host</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_datehost.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_datehost.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_datehost.host">
+				<source>Host</source>
+			</trans-unit>
+
+			<trans-unit id="tx_z3event_domain_model_dateattendee">
+				<source>Date Attendee</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_dateattendee.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_dateattendee.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_z3event_domain_model_dateattendee.attendee">
+				<source>Attendee</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

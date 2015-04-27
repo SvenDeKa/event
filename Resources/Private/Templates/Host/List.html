@@ -1,0 +1,41 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+<h1>Listing for Hosts</h1>
+
+<f:flashMessages />
+
+<section class="hosts-list">
+	<f:debug title='settings'>{settings}</f:debug>
+	<f:for each="{hosts}" as="host">
+		<div class="hosts-item">
+			<f:debug>{host}</f:debug>
+			<h2 class='list-caption'>
+				{f:if(condition:'{host.title}',then:'{host.title} ')}{host.name}
+			</h2>
+			<p>
+				{host.name}<br>
+				{host.email}<br>
+				{host.company}<br>
+				{host.position}<br>
+				{host.city}<br>
+			</p>
+			<figure class='list-img'>
+				<f:debug>{host.images}</f:debug>
+				<figcaption>
+					<f:for each="{host.images}" as="img" iteration="iterator">
+						<f:if condition="{iterator.index} < 1">
+							<f:image src="{img.originalResource.originalFile.storage.configuration.basePath}.{img.originalResource.originalFile.properties.identifier}" width="300" alt="{img.originalResource.title}" />
+						</f:if>
+					</f:for>
+					<f:link.action pageUid="{settings.hosts.pidShow}" action="show" arguments="{host : host}"> 
+						mehr informationen
+					</f:link.action>
+				</figcaption>
+			</figure>
+		</div>
+	</f:for>
+	
+</section>
+
+</f:section>

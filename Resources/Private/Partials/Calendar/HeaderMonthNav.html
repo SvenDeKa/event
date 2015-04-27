@@ -1,0 +1,31 @@
+
+<tr>
+	<td colspan="2" class="previousMonth">
+		<f:if condition="{calendar.navigation.previousMonth}">
+			<f:link.action action="calendar" controller="Date" arguments="{
+				year:'{f:format.date(date:\'{calendar.navigation.previousMonth}\',format:\'Y\')}'
+				month:'{f:format.date(date:\'{calendar.navigation.previousMonth}\',format:\'m\')}'
+				}">
+				<f:translate key="tx_z3event_label.calendar.month.{f:format.date(date:'{calendar.navigation.previousMonth}',format:'m')}.long" />
+			</f:link.action>
+		</f:if>
+	</td>
+	<td colspan="3" class="currentMonth">
+	<f:if condition="{settings.calendar.showMonthJumpNav} > 0">
+		<f:then>
+			<f:render partial="Calendar/MonthJumpNav" arguments="{calendar:calendar,settings:settings}" />
+		</f:then>
+		<f:else>
+			<f:translate key="tx_z3event_label.calendar.month.{f:format.date(date:'{calendar.navigation.shownMonth}',format:'m')}.long" />
+		</f:else>
+	</f:if>
+	</td>
+	<td colspan="2" class="nextMonth">
+		<f:link.action action="calendar" controller="Date" arguments="{
+			year:'{f:format.date(date:\'{calendar.navigation.nextMonth}\',format:\'Y\')}'
+			month:'{f:format.date(date:\'{calendar.navigation.nextMonth}\',format:\'m\')}'
+			}">
+			<f:translate key="tx_z3event_label.calendar.month.{f:format.date(date:'{calendar.navigation.nextMonth}',format:'m')}.long" />
+		</f:link.action>
+	</td>
+</tr>

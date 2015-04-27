@@ -1,0 +1,54 @@
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+	
+	<f:flashMessages />
+	<f:debug title="event">{event}</f:debug>
+	<f:debug title="event.product">{event.product}</f:debug>
+
+	
+	<div class="row">
+		
+		<article class="span8">
+			<header>
+				(Veranstaltungs-View)
+				<h1>{event.name}</h1>
+				<div class="info-block">
+					<f:for each="{event.categories}" as="category" iteration="i">
+						{f:if(condition:'{i.index}>0', then:', ')}{category.name}
+					</f:for>
+				</div>
+			</header>
+			<f:format.html parseFuncTSPath="lib.parseFunc_RTE">{event.description}</f:format.html>
+	
+		</article>
+		
+		
+		<aside class="span4">
+			<h2>Termine</h2>
+			<f:for each="{event.dates}" as="date">
+				<f:render partial="Date/ListItemSmall" arguments="{date:date}" />
+			</f:for>
+			<h2>Downloads</h2>
+			<f:for each="{event.media}" as="medium">
+				<f:render partial="Medium/ListItemSmall" arguments="{medium:medium}" />
+			</f:for>
+		</aside>
+		
+	</div>
+	
+	<f:link.action pageUid="{settings.eventList.pid}" action="list">Back to list</f:link.action>
+
+	
+</f:section>

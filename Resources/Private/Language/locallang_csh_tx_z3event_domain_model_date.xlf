@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-11T18:32:52Z" product-name="z3_event">
+		<header/>
+		<body>
+
+			<trans-unit id="datetime_start.description">
+				<source>Anfang</source>
+			</trans-unit>
+			<trans-unit id="datetime_end.description">
+				<source>Ende</source>
+			</trans-unit>
+			<trans-unit id="daylong.description">
+				<source>ganztägig</source>
+			</trans-unit>
+			<trans-unit id="exclude.description">
+				<source>exclude</source>
+			</trans-unit>
+			<trans-unit id="status.description">
+				<source>status</source>
+			</trans-unit>
+			<trans-unit id="statustext.description">
+				<source>statustext</source>
+			</trans-unit>
+			<trans-unit id="event.description">
+				<source>Veranstaltung</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>Veranstaltungsort</source>
+			</trans-unit>
+			<trans-unit id="hosts.description">
+				<source>Veranstalter/ Referent / Speaker</source>
+			</trans-unit>
+			<trans-unit id="attendees.description">
+				<source>Teilnehmer</source>
+			</trans-unit>
+			<trans-unit id="media.description">
+				<source>Dokumente</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

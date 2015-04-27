@@ -1,0 +1,200 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Select function</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Termine - Kalender</numIndex>
+										<numIndex index="1">Date->calendar;Date->list;Date->show;Event->list</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Termine - Liste</numIndex>
+										<numIndex index="1">Date->list;Date->calendar;Date->show;Date->addDateAttendee;DateAttendee->create;DateAttendee->update</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">Termine - Einzelansicht</numIndex>
+										<numIndex index="1">Date->show;Date->addDateAttendee;DateAttendee->create;DateAttendee->update</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">Event - Liste</numIndex>
+										<numIndex index="1">Event->list;Date->calendar;Event->show</numIndex>
+									</numIndex>
+									<numIndex index="4">
+										<numIndex index="0">Event - Einzelansicht</numIndex>
+										<numIndex index="1">Event->show</numIndex>
+									</numIndex>
+									<numIndex index="5">
+										<numIndex index="0">Teilnehmer - berabeiten</numIndex>
+										<numIndex index="1">Attendee->new; Attendee->edit; Attendee->create; Attendee->update; Attendee->delete</numIndex>
+									</numIndex>
+									<numIndex index="6">
+										<numIndex index="0">Referenten Anzeigen</numIndex>
+										<numIndex index="1">Host->list;Host->show</numIndex>
+									</numIndex>
+									<numIndex index="7">
+										<numIndex index="0">Termine - Nächste</numIndex>
+										<numIndex index="1">Date->upcoming;</numIndex>
+									</numIndex>
+									<numIndex index="8">
+										<numIndex index="0">Event - Highlights</numIndex>
+										<numIndex index="1">Event->highlight;</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+					<settings.switchViews.showSwitchToCal>
+						<TCEforms>
+							<label>Wechseln der Ansicht</label>
+							<config>
+								<type>check</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Wechsel zu Kalender ansicht ermöglichen</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.switchViews.showSwitchToCal>
+					<settings.limit>
+						<TCEforms>
+							<label>Anzahl der angezeigten Datensätze</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+								<max>4</max>
+								<eval>int</eval>
+								<checkbox>1</checkbox>
+								<range>
+									<upper>50</upper>
+									<lower>0</lower>
+								</range>
+								<default>0</default>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.limit>
+					<settings.dateShow.pid>
+						<TCEforms>
+							<label>Seite mit Detailansicht der Termine</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms> 
+					</settings.dateShow.pid>
+					<settings.dateList.pid>
+						<TCEforms>
+							<label>Seite mit Listenansicht der Termine</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms> 
+					</settings.dateList.pid>
+					
+					<settings.eventShow.pid>
+						<TCEforms>
+							<label>Seite mit Detailansicht der Veranstaltung (Seminar)</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms> 
+					</settings.eventShow.pid>
+					<settings.eventHighlight.showPast>
+						<TCEforms>
+							<label>vergangene Seminare anzeigen</label>
+							<config>
+								<type>check</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Auch Seminare mit vergangen Terminen anzeigen</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.eventHighlight.showPast>
+					<settings.eventHighlight.randomIfMore>
+						<TCEforms>
+							<label>Anzeigeeinstellung</label>
+							<config>
+								<type>check</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Zufallsauswahl, wenn mehr Themen gewählt aus darzustellen sind (sonst erste Treffer)</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.eventHighlight.randomIfMore>
+					<settings.eventHighlight.highlights>
+						<TCEforms>
+							<label>Seite mit Detailansicht der Veranstaltung (Seminar)</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>tx_z3event_domain_model_event</allowed>
+								<size>5</size>
+								<maxitems>50</maxitems>
+								<minitems>1</minitems>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms> 
+					</settings.eventHighlight.highlights>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
